@@ -5,6 +5,7 @@ import DisplayBox from "./components/DisplayBox";
 
 function App() {
   const [displayValue, setDisplayValue] = useState("");
+  const [lastOperator, setLastOperator] = useState("");
   return (
     <>
       <div className="wrapper">
@@ -16,21 +17,29 @@ function App() {
               buttonText="AC"
               className="ac"
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="C"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="%"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="/"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
           </div>
           <div className="flex-container">
@@ -38,21 +47,29 @@ function App() {
               buttonText="9"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="8"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="7"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="*"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
           </div>
           <div className="flex-container">
@@ -60,21 +77,29 @@ function App() {
               buttonText="6"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="5"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="4"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="-"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
           </div>
           <div className="flex-container">
@@ -82,21 +107,29 @@ function App() {
               buttonText="3"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="2"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="1"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="+"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
           </div>
           <div className="flex-container">
@@ -104,17 +137,23 @@ function App() {
               buttonText="0"
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="."
               setDisplayValue={setDisplayValue}
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
             <Button
               buttonText="="
               className="equal-button"
               setDisplayValue="setDisplayValue"
               displayValue={displayValue}
+              lastOperator={lastOperator}
+              setLastOperator={setLastOperator}
             />
           </div>
         </div>
