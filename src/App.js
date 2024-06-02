@@ -6,11 +6,12 @@ import DisplayBox from "./components/DisplayBox";
 function App() {
   const [displayValue, setDisplayValue] = useState("");
   const [lastOperator, setLastOperator] = useState("");
+  const [isprank, setIsPrank] = useState(false);
   return (
     <>
       <div className="wrapper">
         <div className="calculator-container">
-          <DisplayBox displayValue={displayValue} />
+          <DisplayBox prank={isprank} displayValue={displayValue} />
           <div className="flex-container">
             <Button
               setDisplayValue={setDisplayValue}
@@ -19,6 +20,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="C"
@@ -26,6 +28,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="%"
@@ -33,6 +36,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="/"
@@ -40,6 +44,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
           </div>
           <div className="flex-container">
@@ -49,6 +54,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="8"
@@ -56,6 +62,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="7"
@@ -63,6 +70,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="*"
@@ -70,6 +78,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
           </div>
           <div className="flex-container">
@@ -79,6 +88,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="5"
@@ -86,6 +96,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="4"
@@ -93,6 +104,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="-"
@@ -100,6 +112,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
           </div>
           <div className="flex-container">
@@ -109,6 +122,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="2"
@@ -116,6 +130,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="1"
@@ -123,6 +138,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="+"
@@ -130,6 +146,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
           </div>
           <div className="flex-container">
@@ -139,6 +156,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="."
@@ -146,6 +164,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
             <Button
               buttonText="="
@@ -154,6 +173,7 @@ function App() {
               displayValue={displayValue}
               lastOperator={lastOperator}
               setLastOperator={setLastOperator}
+              setIsPrank={setIsPrank}
             />
           </div>
         </div>
